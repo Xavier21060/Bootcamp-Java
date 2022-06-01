@@ -42,7 +42,7 @@ public class CollectionCustum<T>{
 
     @Override
     public String toString() {
-        return "CollectionCustum{" +
+        return "Datos de los Clientes{" +
                 "name='" + name + '\'' +
                 ", edad=" + edad +
                 ", salario=" + salario +
@@ -73,18 +73,6 @@ public class CollectionCustum<T>{
         return (T) ("El salario final del trabajador es " + values + salario);
     }
 
-   /**
-    * - debe tener los métodos
-    * size():int
-    * addFirst(T): void
-    * addLast(T):void
-    * add(T):void
-    * remove(T): T remueve el primer elemento indicado y lo retorna
-    * removeAll(T): void remueve todos los elementos.
-    * boolean empty(): indica si la colección está vacía
-    *
-    * @return
-    */
 
 
 }

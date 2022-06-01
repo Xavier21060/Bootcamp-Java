@@ -1,8 +1,17 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
+/**
+ * - debe tener los métodos
+ * size():int
+ * addFirst(T): void
+ * addLast(T):void
+ * add(T):void
+ * remove(T): T remueve el primer elemento indicado y lo retorna
+ * removeAll(T): void remueve todos los elementos.
+ * boolean empty(): indica si la colección está vacía
+ *
+ * @return
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -25,6 +34,13 @@ public class Main {
         descripcion.add(new CollectionCustum<>("Margarita", 55, 2000));
         descripcion.add(new CollectionCustum<>("Alexandra", 66, 6000));
 
+        descripcion.removeAll(descripcion);
+        System.out.println("Eliminando todos los datos" + descripcion + "Cero dato encontrado");
+
+        boolean estadoDeDatos = descripcion.isEmpty();
+        System.out.println("El estado actual es " + estadoDeDatos);
+
+
         for (Object empleado: descripcion){
             System.out.println(empleado.toString());
         }
@@ -43,6 +59,22 @@ public class Main {
             System.out.println(client);
 
         }
+
+
+
+        LinkedList<String> mascotas = new LinkedList<>();
+        mascotas.add("Perro");
+        mascotas.add("Gato");
+
+        System.out.println("Los elementos son" + mascotas);
+
+        mascotas.addLast("Vaca");
+        System.out.println("El elemento agregado al dinal de la fila es " + mascotas );
+
+        mascotas.addFirst("Iguana");
+        System.out.println("El elemento agregado al principio de la collecion es: " + mascotas);
+
+
 
 
     }
